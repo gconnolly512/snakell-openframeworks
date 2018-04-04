@@ -32,6 +32,9 @@ Snake& Snake::operator=(const Snake& other) {
 	screen_dims_ = other.screen_dims_;
 	body_size_ = other.body_size_;
 
+	snake_body.clear();
+	current_direction_ = RIGHT;
+
 	// Copy linked list over by creating new links
 	head_ = new SnakeBody();
 
